@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aviatrix Marketing Hub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0b1c2d;
+      --secondary: #d4af37;
+      --accent: #1f6fd8;
+      --bg-light: #f7f9fc;
+      --text-dark: #1c1c1c;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: var(--bg-light);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), #122d4d);
+      color: #fff;
+      padding: 1.5rem 4rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .logo img {
+      height: 60px;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 2rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: var(--secondary);
+    }
+
+    .hero {
+      padding: 5rem 4rem;
+      background: radial-gradient(circle at top, #ffffff, var(--bg-light));
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero button {
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      padding: 0.9rem 2rem;
+      border-radius: 30px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .hero button:hover {
+      background: var(--secondary);
+      color: var(--primary);
+    }
+
+    .hero img {
+      width: 100%;
+      max-width: 420px;
+      justify-self: center;
+    }
+
+    section {
+      padding: 4rem;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .section-title h2 {
+      font-size: 2.2rem;
+      color: var(--primary);
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card h3 {
+      margin-bottom: 1rem;
+      color: var(--accent);
+    }
+
+    .workflow {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+      text-align: center;
+    }
+
+    .workflow div {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 14px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.07);
+    }
+
+    footer {
+      background: var(--primary);
+      color: #fff;
+      padding: 2rem 4rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+    }
+
+    footer h4 {
+      margin-bottom: 1rem;
+      color: var(--secondary);
+    }
+
+    footer a {
+      color: #ddd;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    footer a:hover {
+      color: var(--secondary);
+    }
+
+    .copyright {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #bbb;
+      grid-column: 1 / -1;
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="C:\Users\ADMIN\OneDrive\Desktop\aviatrix marketing hub" alt="Aviatrix Marketing Hub Logo">
+      <strong>Aviatrix Marketing Hub</strong>
+    </div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#services">Services</a>
+      <a href="#workflow">How It Works</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div>
+      <h1>Connecting Airlines with the Right Buyers</h1>
+      <p>
+        Aviatrix Marketing Hub acts as a strategic bridge between airlines and buyers, 
+        delivering intelligent marketing, real-time insights, and high-value partnerships 
+        in aviation, travel, and tourism.
+      </p>
+      <button>Get Started</button>
+    </div>
+    <img src="/mnt/data/1000287382.jpg" alt="Aviation Illustration">
+  </div>
+
+  <section id="services">
+    <div class="section-title">
+      <h2>Our Core Services</h2>
+    </div>
+    <div class="services">
+      <div class="card">
+        <h3>Airline Marketing</h3>
+        <p>Targeted campaigns and brand positioning to help airlines reach the right audience globally.</p>
+      </div>
+      <div class="card">
+        <h3>Buyer Acquisition</h3>
+        <p>Connecting travel agencies, corporate buyers, and tour operators with airline partners.</p>
+      </div>
+      <div class="card">
+        <h3>Market Intelligence</h3>
+        <p>Data-driven insights, demand forecasting, and competitive analysis for smarter decisions.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="workflow">
+    <div class="section-title">
+      <h2>How It Works</h2>
+    </div>
+    <div class="workflow">
+      <div>
+        <h3>1. Airline Onboarding</h3>
+        <p>We partner with airlines and understand routes, capacity, and objectives.</p>
+      </div>
+      <div>
+        <h3>2. Buyer Matching</h3>
+        <p>Our platform identifies and matches verified buyers with airline offerings.</p>
+      </div>
+      <div>
+        <h3>3. Growth & Analytics</h3>
+        <p>Continuous monitoring, reporting, and optimization for long-term success.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div>
+      <h4>Aviatrix Marketing Hub</h4>
+      <p>Daily News | Travel & Tourism | Aviation</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <a href="#">Home</a>
+      <a href="#services">Services</a>
+      <a href="#workflow">How It Works</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p>Email: info@aviatrixmarketinghub.com</p>
+      <p>Phone: +91 XXXXX XXXXX</p>
+    </div>
+    <div class="copyright">
+      © 2025 Aviatrix Marketing Hub. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
